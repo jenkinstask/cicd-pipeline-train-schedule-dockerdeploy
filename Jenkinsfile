@@ -16,7 +16,7 @@ pipeline {
              script{
                  app=docker.build("mazid1315/train-schedule")
                  app.inside{
-                    sh 'echo $(curl 35.192.29.251:8080)'
+                    sh 'echo $(curl 35.192.29.251:4243)'
                  }
              }
          }    
