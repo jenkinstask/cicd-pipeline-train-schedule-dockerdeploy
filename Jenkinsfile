@@ -14,7 +14,7 @@ pipeline {
             }
          steps {
              script{
-                 app=docker.build("jenkinstask/train-schedule")
+                 app=docker.build("mazid1315/train-schedule")
                  app.inside{
                     sh 'echo $(curl localhost:8080)'
                  }
